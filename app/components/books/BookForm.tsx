@@ -18,7 +18,7 @@ export default function BookForm() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('/api/books', {
+      const response = await fetch('http://localhost:4000/api/books', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
